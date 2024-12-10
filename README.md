@@ -108,7 +108,7 @@ print('Reaches goal {:.2f}%. Obtains an average undiscounted return of {:.4f}.'.
 
 import numpy as np
 ```
-```
+```python
 def policy_evaluation(pi, P, gamma=1.0, theta=1e-10):
     V = np.zeros(len(P), dtype=np.float64)
 
