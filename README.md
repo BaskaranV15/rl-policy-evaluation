@@ -107,7 +107,8 @@ print('Reaches goal {:.2f}%. Obtains an average undiscounted return of {:.4f}.'.
     mean_return(env, pi_2)))
 
 import numpy as np
-
+```
+```
 def policy_evaluation(pi, P, gamma=1.0, theta=1e-10):
     V = np.zeros(len(P), dtype=np.float64)
 
@@ -131,7 +132,8 @@ def policy_evaluation(pi, P, gamma=1.0, theta=1e-10):
             break
 
     return V
-
+```
+```
 # Code to evaluate the first policy
 V1 = policy_evaluation(pi_1, P)
 print_state_value_function(V1, P, n_cols=7, prec=5)
